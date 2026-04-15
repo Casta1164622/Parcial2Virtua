@@ -1,9 +1,9 @@
 <?php
 $host = getenv('DB_HOST') ?: 'db';
 $port = getenv('DB_PORT') ?: '3306';
-$db   = getenv('DB_DATABASE') ?: 'ejemplo_db';
-$user = getenv('DB_USERNAME') ?: 'ejemplo_user';
-$pass = getenv('DB_PASSWORD') ?: 'ejemplo_pass123';
+$db   = getenv('DB_DATABASE') ?: 'parcialdb';
+$user = getenv('DB_USERNAME') ?: 'parcialuser';
+$pass = getenv('DB_PASSWORD') ?: 'parcialpass123';
 
 $conn = @new mysqli($host, $user, $pass, $db, (int)$port);
 ?>
